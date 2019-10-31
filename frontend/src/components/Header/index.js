@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
 
-import "./Header.css";
+import "./Header.css"
 
 class Header extends React.Component {
     render() {
@@ -14,7 +14,7 @@ class Header extends React.Component {
                     </div>
                 </div>
             </nav>
-        );
+        )
     }
 }
-export default Header;
+export default Header
