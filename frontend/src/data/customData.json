@@ -4,34 +4,44 @@
     "nickname": "viniciuspzt",
     "avatar": "https://avatars1.githubusercontent.com/u/8235026?s=460&v=4",
     "caption": "Nem cavalo aguenta és Habib kkkk",
-    "image": "https://avatars1.githubusercontent.com/u/8235026?s=460&v=4"
+    "image": "https://avatars1.githubusercontent.com/u/8235026?s=460&v=4",
+    "likes": 9,
+    "hasBeenLiked": false
   },
   {
     "id": 2,
     "nickname": "adrianoimperador",
     "avatar": "https://instagram.ffln1-1.fna.fbcdn.net/vp/bef83b89820aaa191ed0b96acde13914/5E4EC691/t51.2885-19/s320x320/42069050_717671075235420_7666692240277766144_n.jpg?_nc_ht=instagram.ffln1-1.fna.fbcdn.net",
     "caption": "De boa és",
-    "image": "https://instagram.ffln1-1.fna.fbcdn.net/vp/ed8ec36e634556134f84d2b1288271fe/5E505929/t51.2885-15/sh0.08/e35/s750x750/70356751_108792997051525_3510893124423508839_n.jpg?_nc_ht=instagram.ffln1-1.fna.fbcdn.net&_nc_cat=101"
+    "image": "https://instagram.ffln1-1.fna.fbcdn.net/vp/ed8ec36e634556134f84d2b1288271fe/5E505929/t51.2885-15/sh0.08/e35/s750x750/70356751_108792997051525_3510893124423508839_n.jpg?_nc_ht=instagram.ffln1-1.fna.fbcdn.net&_nc_cat=101",
+    "likes": 50000,
+    "hasBeenLiked": false
   },
   {
     "id": 3,
     "nickname": "viniciuspzt",
     "avatar": "https://avatars1.githubusercontent.com/u/8235026?s=460&v=4",
     "caption": "Nem cavalo aguenta és Habib kkkk",
-    "image": "https://avatars1.githubusercontent.com/u/8235026?s=460&v=4"
+    "image": "https://avatars1.githubusercontent.com/u/8235026?s=460&v=4",
+    "likes": 50,
+    "hasBeenLiked": false
   },
   {
     "id": 4,
     "nickname": "teste4",
     "avatar": "https://avatars1.githubusercontent.com/u/8235026?s=460&v=4",
     "caption": "teste4",
-    "image": "https://avatars1.githubusercontent.com/u/8235026?s=460&v=4"
+    "image": "https://avatars1.githubusercontent.com/u/8235026?s=460&v=4",
+    "likes": 5,
+    "hasBeenLiked": false
   },
   {
     "id": 5,
     "nickname": "teste5",
     "avatar": "https://avatars1.githubusercontent.com/u/8235026?s=460&v=4",
     "caption": "teste5",
-    "image": "https://avatars1.githubusercontent.com/u/8235026?s=460&v=4"
+    "image": "https://avatars1.githubusercontent.com/u/8235026?s=460&v=4",
+    "likes": 10,
+    "hasBeenLiked": false
   }
 ]

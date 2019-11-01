@@ -34,6 +34,21 @@
   display: block;
   width: 100%;
 }
+.Post-likes {
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  text-align: left;  
+  color: #262626;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 5px;
+  padding-right: 5px;  
+  display: inline;
+  position: relative;  
+text-decoration:none;
+
+}
 .Post-description {
   display: flex;
   text-align: left;
@@ -41,17 +56,20 @@
 }
 .Post-caption {
   margin-left: 12px;
-  text-align: left;
+  text-align: left;  
+  display: flex;  
+  align-items: center;
 }
-.buttons {
-  margin-top: 10px;
+.post-footer {
   text-align: left;
+  display: flex;
+  align-items: center;
 }
 .button {
-  height: 10px;
   border: 0;
   background: #ffffff;
   cursor: pointer;
+  align-items: center;
 }
 button:hover img {
   transform: translateY(-5px);
