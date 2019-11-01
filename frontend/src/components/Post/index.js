@@ -13,7 +13,7 @@ const Post = () => {
     function increment() {
         setLikes(likes => likes + 1);
     }
-    
+
     return (
         <div>
             {customData.map(post => (
@@ -51,6 +51,5 @@ const Post = () => {
             ))}
         </div>
     )
-
 }
 export default Post
