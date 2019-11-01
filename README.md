@@ -23,3 +23,21 @@ Important: Try and create really small components, so you can have a big hierarc
 https://reactjs.org/docs/hooks-reference.html
 
 Send a github or bitbucket link to your repository
+
+## Layout da aplicação
+
+<img src="frontend/src/assets/instalagoasoft" width="400">
+
+## Para rodar a aplicação
+
+Após clonar o repositório do github, por conta do arquivo .gitignore executar um dos comandos abaixo para carregar os modulos do node dentro da pasta do frontend.
+
+    yarn install
+    ou
+    npm install
+
+Dentro da pasta frontend, execute o comando abaixo para iniciar a aplicação.
+
+    yarn start
+    ou
+    npm react-script start
