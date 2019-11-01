@@ -10,10 +10,6 @@ const Post = () => {
 
     const [likes, setLikes] = useState(0)
 
-    function increment() {
-        setLikes(likes => likes + 1);
-    }
-
     return (
         <div>
             {customData.map(post => (
@@ -32,13 +28,12 @@ const Post = () => {
                         </div>
                     </div>
                     <div className="post-footer">
-                        <button className="button" type="button" onClick={increment}>
+                        <button className="button" type="button"
+                            onClick={() => setLikes(post.likes = post.likes + 1)}
+                        >
                             <img src={like} alt="Like" />
                         </button>
-                        <button className="button" type="button" onClick={() => setLikes(likes => post.likes + 1)}>
-                            <img src={like} alt="Like" />
-                        </button>
-                        <p className="Post-caption">Curtido por {likes}<a className="Post-likes" href="/">{post.likes}</a> pessoas</p>
+                        <p className="Post-caption">Curtido por <a className="Post-likes" href="/">{post.likes}</a> pessoas</p>
                     </div>
                     <div className="Post-description">
                         <p className="Post-user-nickname">{post.nickname}</p>
@@ -48,7 +43,8 @@ const Post = () => {
                         <p>{post.date}</p>
                     </div>
                 </div>
-            ))}
+            ))
+            }
         </div>
     )
 }
