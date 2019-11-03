@@ -26,7 +26,7 @@ Send a github or bitbucket link to your repository
 
 ## Layout da aplicação
 
-<img src="frontend/src/assets/instalagoasoft.png" width="400">
+<img src="src/assets/instalagoasoft.png" width="400">
 
 ## Para rodar a aplicação
 
