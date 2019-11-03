@@ -1,4 +1,4 @@
-.Post {
+.container {
   border-radius: 3px;
   border: 1px solid #e6e6e6;
   background-color: #fff;
@@ -6,54 +6,42 @@
   margin-left: 20%;
   margin-right: 20%;
 }
-.Post-user {
+.post-user {
   display: flex;
   padding: 16px;
   align-items: center;
 }
-.Post-user-avatar {
+.post-user-avatar {
   width: 35px;
   height: 35px;
 }
-.Post-user-avatar img {
+.post-user-avatar img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
-.Post-user-nickname {
+.post-user-nickname {
   margin-left: 12px;
   font-family: "PT Sans", sans-serif;
   font-weight: bold;
   text-align: left;
 }
-.Post-image-bg {
+.image img {
+  display: block;
+  width: 100%;
   background-color: #efefef;
   align-content: left;
 }
-.Post-image img {
-  display: block;
-  width: 100%;
-}
-.Post-likes {
-  font-family: "PT Sans", sans-serif;
+.post-likes {
   font-weight: bold;
-  text-align: left;
-  color: #262626;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  padding-left: 5px;
-  padding-right: 5px;
-  display: inline;
-  position: relative;
-  text-decoration: none;
+  padding: 0 5px;
 }
-.Post-description {
+.post-description {
   display: flex;
   text-align: left;
   align-items: center;
 }
-.Post-caption {
+.post-caption {
   text-align: left;
   display: flex;
   align-items: center;
@@ -64,22 +52,7 @@
   display: flex;
   align-items: center;
 }
-.button {
-  border: 0;
-  background: #ffffff;
-  cursor: pointer;
-  align-items: center;
-}
-button:focus {
-  /*background-color: red;*/
-  outline: 0px auto -webkit-focus-ring-color;
-  outline-offset: 0px;
-}
-button:active {
-  transform: scale(1.5, 1.5);
-  transition: all 0.1s;
-}
-.Post-date {
+.post-date {
   font-size: 10px;
   letter-spacing: 0.2px;
   color: #999;

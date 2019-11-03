@@ -1,0 +1,20 @@
+button {
+  border: 0;
+  background:transparent;
+  cursor: pointer;
+  align-items: center;
+}
+button:focus {
+  outline: 0px auto -webkit-focus-ring-color;
+  outline-offset: 0px;
+}
+button:active {
+  transform: scale(1.5, 1.5);
+  transition: all 0.1s;
+}
+.standard {
+  fill: #D7D0D3;
+}
+.liked {
+  fill: #DC5081;
+}
