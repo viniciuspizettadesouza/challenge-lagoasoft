@@ -36,7 +36,7 @@ Após clonar o repositório do github, executar um dos comandos abaixo para carr
     ou
     npm install
 
-Dentro da pasta frontend, execute o comando abaixo para iniciar a aplicação.
+Então execute o comando abaixo para iniciar a aplicação.
 
     yarn start
     ou
