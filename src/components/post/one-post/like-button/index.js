@@ -5,7 +5,7 @@ import ReactSVG from 'react-svg'
 import like from '../../../../assets/thumb.svg'
 import "./post.css"
 
-const Button = ({ handleLikes, buttonStatus }) => {
+const LikeButton = ({ handleLikes, buttonStatus }) => {
 
     return (
         <button onClick={handleLikes}>
@@ -13,4 +13,4 @@ const Button = ({ handleLikes, buttonStatus }) => {
         </button>
     )
 }
-export default React.memo(Button)
+export default React.memo(LikeButton)

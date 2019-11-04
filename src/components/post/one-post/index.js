@@ -1,29 +1,31 @@
 import React, { useState, useCallback, useEffect } from "react"
 
+import LikeButton from './like-button'
+
 import "./post.css"
-import Button from './like-button'
 
 const OnePost = ({ post }) => {
 
     const [buttonStatus, setButtonStatus] = useState(false)
     const [likes, setLikes] = useState(post.likes)
+
     const handleLikes = useCallback(() => { setButtonStatus(prevStatus => !prevStatus) }, [])
 
     useEffect(() => {
-        if (buttonStatus === true) {
-            setLikes(prevLikes => prevLikes + 1)
+        if (buttonStatus) {
+            setLikes(post.likes + 1)
         } else if (post.likes !== likes && !buttonStatus) {
-            setLikes(prevLikes => prevLikes - 1)
+            setLikes(prevStatus => prevStatus - 1)
         }
-    }, [buttonStatus, post.likes])
+    }, [buttonStatus, likes, post.likes])
 
     return (
         <div className="container" key={post.id}>
-            <div className="post-header">
-                <div className="post-user-avatar">
+            <div className="header">
+                <div className="user-avatar">
                     <img src={post.avatar} alt={post.nickname} />
                 </div>
-                <div className="post-user-nickname">
+                <div className="user-nickname">
                     <p>{post.nickname}</p>
                 </div>
             </div>
@@ -32,17 +34,19 @@ const OnePost = ({ post }) => {
                 <img alt={post.caption} src={post.image} />
             </div>
 
-            <div className="post-footer">
-                <Button className="button" handleLikes={handleLikes} buttonStatus={buttonStatus} />
+            <div className="description">
+                <LikeButton className="button" handleLikes={handleLikes} buttonStatus={buttonStatus} />
                 <p>Curtido por</p>
-                <p className="post-likes">{likes}</p>
+                <p className="likes">{likes}</p>
                 <p>pessoas</p>
             </div>
-            <div className="post-description">
-                <p className="post-user-nickname">{post.nickname}</p>
-                <p className="post-caption">{post.caption}</p>
+
+            <div className="description">
+                <p className="user-nickname">{post.nickname}</p>
+                <p className="caption">{post.caption}</p>
             </div>
-            <div className="post-date">
+
+            <div className="date">
                 <p>{post.date}</p>
             </div>
         </div>
