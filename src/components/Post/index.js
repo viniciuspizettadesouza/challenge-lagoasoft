@@ -2,7 +2,7 @@ import React from "react"
 
 import customData from "../../data/customData"
 
-import OnePost from './onePost'
+import OnePost from './one-post'
 
 const Post = () => {
 

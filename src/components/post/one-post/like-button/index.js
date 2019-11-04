@@ -3,7 +3,7 @@ import classnames from 'classnames'
 import ReactSVG from 'react-svg'
 
 import like from '../../../../assets/thumb.svg'
-import "./Post.css"
+import "./post.css"
 
 const Button = ({ handleLikes, buttonStatus }) => {
 

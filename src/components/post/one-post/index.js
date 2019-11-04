@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useEffect } from "react"
 
-import "./Post.css"
+import "./post.css"
 import Button from './like-button'
 
 const OnePost = ({ post }) => {
@@ -19,7 +19,7 @@ const OnePost = ({ post }) => {
 
     return (
         <div className="container" key={post.id}>
-            <div className="post-user">
+            <div className="post-header">
                 <div className="post-user-avatar">
                     <img src={post.avatar} alt={post.nickname} />
                 </div>
@@ -34,14 +34,14 @@ const OnePost = ({ post }) => {
 
             <div className="post-footer">
                 <Button className="button" handleLikes={handleLikes} buttonStatus={buttonStatus} />
-                <p className="post-caption">Curtido por <p className="post-likes">{likes}</p> pessoas</p>
+                <p>Curtido por</p>
+                <p className="post-likes">{likes}</p>
+                <p>pessoas</p>
             </div>
-
             <div className="post-description">
                 <p className="post-user-nickname">{post.nickname}</p>
                 <p className="post-caption">{post.caption}</p>
             </div>
-            
             <div className="post-date">
                 <p>{post.date}</p>
             </div>
